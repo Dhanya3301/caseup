@@ -17,8 +17,8 @@ export const ourFileRouter = {
       const res = await fetch(file.url);
       const buffer = await res.arrayBuffer();
 
-      const imageMetaData = await sharp(buffer).metadata();
-      const { width, height } = imageMetaData;
+      const imgMetadata = await sharp(buffer).metadata();
+      const { width, height } = imgMetadata;
 
       if (!configId) {
         const configuration = await db.configuration.create({
@@ -39,6 +39,7 @@ export const ourFileRouter = {
             croppedImageUrl: file.url,
           },
         });
+
         return { configId: updatedConfiguration.id };
       }
     }),
