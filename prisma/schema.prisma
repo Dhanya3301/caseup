@@ -52,11 +52,11 @@ model Configuration {
 }
 
 model User {
-  id         String   @id @default(cuid())
-  email      String
-  Order      Order[]
-  createdAAt DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  id        String   @id @default(cuid())
+  email     String
+  Order     Order[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Order {
