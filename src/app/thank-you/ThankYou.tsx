@@ -100,7 +100,7 @@ const ThankYou = () => {
               </div>
             </div>
             <div>
-              <p className="font-medium text-gray-900">Shipping address</p>
+              <p className="font-medium text-gray-900">Billing address</p>
               <div className="mt-2 text-zinc-700">
                 <address className="not-italic">
                   <span className="block">{billingAddress?.name}</span>
