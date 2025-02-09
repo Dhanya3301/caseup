@@ -25,6 +25,7 @@ const PhonePreview = ({
     setRenderedDimensions({ width, height });
   };
 
+  // @ts-ignore
   useEffect(() => {
     handleResize();
 
@@ -50,6 +51,7 @@ const PhonePreview = ({
         }}
       >
         <img
+          alt="cropped-image"
           width={renderedDimensions.width / (3000 / 637)}
           className={cn(
             "phone-skew relative z-20 rounded-t-[15px] rounded-b-[10px] md:rounded-t-[30px] md:rounded-b-[20px]",

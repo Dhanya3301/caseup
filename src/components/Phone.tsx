@@ -10,13 +10,13 @@ const Phone = ({ imgSrc, dark = false, className, ...props }: PhoneProps) => {
   return (
     <div
       className={cn(
-        "relative pointer-events-none z-50 overflow-hidden",
+        "relative pointer-events-none z-10 overflow-hidden",
         className
       )}
       {...props}
     >
       <img
-        className="pointer-events-none z-50 select-none"
+        className="pointer-events-none z-10 select-none"
         src={
           dark
             ? "/phone-template-dark-edges.png"
